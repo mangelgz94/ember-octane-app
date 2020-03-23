@@ -1,0 +1,7 @@
+{{outlet}}
+
+{{#each posts as |post|}}
+  <LinkTo @route="posts.show" @model={{post.id}}><h3>Title: {{post.title}}</h3></LinkTo>
+  <p>{{post.body}}</p>
+  <p>By: {{post.user.name}}</p><br>
+{{/each}}

@@ -1,0 +1,4 @@
+{{outlet}}
+<h3>Title:  {{post.title}}</h3>
+<p>{{post.body}}</p>
+<LinkTo @route="posts.user" @model={{post.user.id}}>By: {{post.user.name}}</LinkTo><br>
